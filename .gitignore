@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large/temporary)
+*.nc
+*.nc4
+*.hdf
+*.hdf5
+*.grib
+*.grib2
+
+# Downloaded data directories
+202*/
+preprocessed_data/
+output_data/
+test_preprocessed_data/
+
+# CDS API credentials
+.cdsapirc
+cdsapirc
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# WAM2Layers outputs
+*.nc  # But keep example files if any
+!preprocessed_example/*.nc
+
+# Configuration files that might contain sensitive data
+workflow_config.yaml
+config*.yaml
+secrets.yaml

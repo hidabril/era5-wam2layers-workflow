@@ -1,0 +1,33 @@
+# Output
+preprocessed_data_folder: ./Chingaza/preprocessed_data
+output_folder: ./Chingaza/output_data
+output_frequency: "1d"
+
+# Preprocessing
+filename_template: {year}/descompuestos/{month:02}/ERA5_{year}-{month:02d}-{day:02d}{levtype}_{variable}.nc
+preprocess_start_date: "2023-01-01T00:00"
+preprocess_end_date: "2023-12-31T00:00"
+level_type: model_levels
+levels: [20,40,60,80,90,95,100,105,110,115,120,123,125,128,130,131,132,133,134,135,136,137]
+input_frequency: "1h"
+
+# Tracking
+tracking_direction: backward # forward or backward
+tracking_domain: null  # use full domain of preprocessed data
+#tracking_domain: [-80, -15, -30, 15]
+#tracking_domain: amazon_basin.nc
+periodic_boundary: False #use true when having 360 degrees of longitude data in the tracking domain
+tracking_start_date: "2023-01-01T00:00"
+tracking_end_date: "2023-12-31T00:00"
+
+# Tracking parameters important for numerical stability and vertical mixing
+timestep: 600 # timestep in seconds
+kvf: 3
+
+# Tagging
+tagging_region: [-73.9, 4.30, -73.4, 4.8]
+#tagging_region: Chingaza_nc.nc
+tagging_start_date: "2023-01-01T00:00"
+tagging_end_date: "2023-12-31T00:00"
+restart: False
+target_frequency: "10min"
