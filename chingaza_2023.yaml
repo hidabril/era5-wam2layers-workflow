@@ -30,4 +30,3 @@ tagging_region: [-73.9, 4.30, -73.4, 4.8]
 tagging_start_date: "2023-01-01T00:00"
 tagging_end_date: "2023-12-31T00:00"
 restart: False
-target_frequency: "10min"
