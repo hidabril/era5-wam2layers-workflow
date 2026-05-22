@@ -30,4 +30,3 @@ kvf: 3
 tagging_start_date: "2026-01-25T00:00"
 tagging_end_date: "2026-01-27T00:00"
 restart: False
-target_frequency: "10min"
